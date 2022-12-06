@@ -1,0 +1,29 @@
+input {
+  font-size: 12px;
+}
+ion-item {
+  border-radius: 15px;
+}
+
+h1 {
+  margin-top: 0;
+  font-weight: bold;
+}
+ion-button {
+  --padding-start: 30px;
+  --padding-end: 30px;
+}
+ion-content {
+  display: flex;
+  align-items: center !important;
+}
+
+.form {
+  padding: 0 9%;
+}
+.judulBiru {
+  color: lightblue;
+}
+h4 {
+  margin-top: 90px;
+}

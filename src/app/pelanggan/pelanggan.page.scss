@@ -1,0 +1,23 @@
+#container::part(scroll) {
+  --overflow: hidden !important;
+}
+
+ion-label ion-button {
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 5px;
+}
+
+table {
+  font-size: 12px;
+  color: #aaa;
+}
+td {
+  padding: 5px;
+  padding-left: 0px;
+}
+
+.option::part(native) {
+  width: 80px !important;
+  height: 30px !important;
+}

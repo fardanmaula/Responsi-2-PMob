@@ -1,4 +1,6 @@
+<?php
 
+$string = "
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -17,11 +19,12 @@ import { AppRoutingModule } from './app-routing.module';
 export class AppModule {}
 
 
+";
 
 
+$string .= "\n\n\n\n/* End of file  */
 
+/* Created at " . date('Y-m-d H:i:s') . " */
+/* Mohammad Irham Akbar CRUD IONIC 6 Angular */";
 
-/* End of file  */
-
-/* Created at 2022-12-06 15:51:28 */
-/* Mohammad Irham Akbar CRUD IONIC 6 Angular */
+$hasil_app_module = createFile($string,"../src/app/app.module.ts");

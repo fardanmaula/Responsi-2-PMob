@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Edit Pelanggan</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">
+        Edit Mahasiswa
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list lines="full">
+								
+    <ion-item>
+      <ion-label position="floating">Nama</ion-label>
+      <ion-input required [(ngModel)]="nama" placeholder="Masukkan Nama" type="text">
+      </ion-input>
+    </ion-item>
+								
+    <ion-item>
+      <ion-label position="floating">Alamat</ion-label>
+      <ion-input required [(ngModel)]="alamat" placeholder="Masukkan Alamat" type="text">
+      </ion-input>
+    </ion-item>
+								
+    <ion-item>
+      <ion-label position="floating">NoHP</ion-label>
+      <ion-input required [(ngModel)]="noHP" placeholder="Masukkan NoHP" type="text">
+      </ion-input>
+    </ion-item>
+      <ion-input required [(ngModel)]="id" type="hidden">
+      </ion-input>
+    <ion-row>
+      <ion-col>
+        <ion-button type="button" (click)="editPelanggan()" color="primary" shape="full" expand="block">Edit Pelanggan
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+</ion-content>
